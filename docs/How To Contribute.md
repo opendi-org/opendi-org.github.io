@@ -11,19 +11,19 @@ This project is divided into 3 main repositories, holding different content:
 
 Holds the source content for the main OpenDI landing pages, including introductory and cross-document resources like this contribution guide.
 
-[Link to repo.](https://github.com/opendi/landing-site)
+[Link to repo.](https://github.com/opendi-org/landing-site)
 
 ### Roles and User Stories
 
 Holds source content describing Roles for a DI team, and the user stories for each role.
 
-[Link to repo.](https://github.com/opendi/roles-user-stories)
+[Link to repo.](https://github.com/opendi-org/roles-user-stories)
 
 ### JSON Schema
 
 Holds the OpenDI JSON Schema for Causal Decision Models, and source for the schema's documentation.
 
-[Link to repo.](https://github.com/opendi/json-schema)
+[Link to repo.](https://github.com/opendi-org/json-schema)
 
 ## Feedback
 
