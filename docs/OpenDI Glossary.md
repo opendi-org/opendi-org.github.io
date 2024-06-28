@@ -55,7 +55,7 @@ Examples include:
 * [Microsoft Teams Whiteboard](https://support.microsoft.com/en-us/office/use-whiteboard-in-a-teams-meeting-26f87802-b37f-4af0-806d-af79fbfb8ae6)
 
 ## Computational Resource
-Resources necessary for decision simulation, managed and used by [Decision Simulation Managers](https://opendi.github.io/roles-user-stories/Roles/Decision%20Simulation%20Manager) and [Decision Simulation Builders](https://opendi.github.io/roles-user-stories/Roles/Decision%20Simulation%20Builder).
+Resources necessary for decision simulation, managed and used by [Decision Simulation Managers](https://opendi-org.github.io/roles-user-stories/Roles/Decision%20Simulation%20Manager) and [Decision Simulation Builders](https://opendi-org.github.io/roles-user-stories/Roles/Decision%20Simulation%20Builder).
 
 Examples include:
 - Hardware resources
@@ -143,7 +143,7 @@ Any documents that captures the rationale for the decision and the work done by 
 ## Decision Maker
  The person who actually makes the decision, that is the person who at some point takes an irrevocable Action (or Actions) that begin a cause-and-effect chain that will eventually lead to Outcome(s).
 
-This role is described in [Roles and User Stories](https://opendi.github.io/roles-user-stories#decision-maker).
+This role is described in [Roles and User Stories](https://opendi-org.github.io/roles-user-stories#decision-maker).
  
  Note:  
  The Decision Maker and the [Decision Customer](#decision-customer) may or may not be the same. The Decision Customer requests the decision. They may or may not delegate making the decision to separate Decision Makers, or they may retain decision making and use the Decision Team as advisors.
@@ -168,7 +168,7 @@ This role is described in [Roles and User Stories](https://opendi.github.io/role
 ## Decision Monitoring
  The act of observing and/or measuring attributes of [Levers](#lever), [Intermediates](#intermediate), and other [Decision Elements](#decision-element) as a decision unfolds over time. 
 
-This is performed by the Decision Monitor, described in [Roles and User Stories](https://opendi.github.io/roles-user-stories#decision-monitor).
+This is performed by the Decision Monitor, described in [Roles and User Stories](https://opendi-org.github.io/roles-user-stories#decision-monitor).
 
 ## Decision Objective Statement
  The high-level statement of the purpose (objective) of the decision, provided by the [Decision Customer](#decision-customer).
@@ -193,7 +193,7 @@ Objective statements are usually vague and may need further clarification before
 ## Decision Team
  A team of persons (or a single person) responsible for implementing one or more steps of the Decision Intelligence process.
  
- Possible roles for members of the Decision Team are described in [Roles and User Stories](https://opendi.github.io/roles-user-stories#user-roles).
+ Possible roles for members of the Decision Team are described in [Roles and User Stories](https://opendi-org.github.io/roles-user-stories#user-roles).
 ## Dependency
  A [Decision Element](#decision-element) representing a "causal-like" link that shows how upstream factors influence downstream factors.
 
