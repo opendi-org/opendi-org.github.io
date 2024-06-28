@@ -1,0 +1,62 @@
+# Adapted from the basic workflow
+
+name: Generate MKDocs Website
+permissions:
+  contents: write # Permission to write (push) to repo contents
+  id-token: write # Needed for deploy-pages action
+  pages: write # Needed for deploy-pages action
+
+on:
+  push:
+    branches: [ "main" ] # Job runs on push to main
+    paths:               # Run when site contents or configuration changes
+      - 'docs/*'
+      - 'mkdocs.yml'
+
+  workflow_dispatch:   # Allow manual re-run from Actions tab
+
+jobs:
+  docs-gen: # Pulls repo contents, runs json schema docs generation, pushes new docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4 # Check out the repo
+      - uses: actions/setup-python@v5 # Set up python for running pip package
+        with:
+          python-version: 3.11
+
+      - name: Install pip dependencies # For doc generation package
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs
+          pip install mkdocs-material
+          pip install "mkdocs-material[imaging]"
+
+      - name: Configure git # Setup user info and origin url so push will succeed
+        run: |
+          git config --global user.name 'Actions: Generate MKDocs Website'
+          git config --global user.email 'actions-generate-mkdocs-website@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Generate mkdocs # Run mkdocs deploy command
+        run: |
+          mkdocs gh-deploy --force
+
+  # adapted from https://thomasthornton.cloud/2024/05/01/deploying-mkdocs-to-github-pages-with-github-actions/
+  deploy-docs:
+    needs: docs-gen
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # Check out the repo
+        with:
+          ref: gh-pages
+      - uses: actions/configure-pages@v5 # Configure pages
+      - uses: actions/upload-pages-artifact@v3 # Upload the pages
+        with:
+          path: '.'
+        id: deployment
+      - uses: actions/deploy-pages@v4 # Deploy the new pages
+          
