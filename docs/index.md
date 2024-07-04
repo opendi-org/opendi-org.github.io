@@ -6,9 +6,9 @@ For an overview of the OpenDI project as a whole, see the [OpenDI Intro](./OpenD
 
 ## OpenDI Standards
 
-### [Roles and User Stories](https://opendi-org.github.io/roles-user-stories)
+### [Roles and User Stories](http://roles-user-stories.opendi.org)
 
-### [JSON Schema Specification](https://opendi-org.github.io/json-schema)
+### [JSON Schema Specification](http://json-schema.opendi.org)
 
 ### [API Specification](./API%20Specification.md)
 
