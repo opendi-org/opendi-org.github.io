@@ -38,6 +38,10 @@ jobs:
           git config --global user.email 'actions-generate-mkdocs-website@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
+      - name: Create CNAME file # Add this step to create the CNAME file
+        run: |
+           echo 'opendi.org' > docs/CNAME
+
       - name: Generate mkdocs # Run mkdocs deploy command
         run: |
           mkdocs gh-deploy --force
