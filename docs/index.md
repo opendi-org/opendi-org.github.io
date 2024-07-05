@@ -9,11 +9,11 @@ We are a decentralized group of entrepreneurs, executives, researchers, governme
 
 For two thousand years, humanity has created separate disciplines: economics, data science, artificial intelligence, medicine, computer science, complex systems analysis, psychology, and hundreds more.  Solutions to our greatest problems require that we move from these *specializations* and *knowledge silos* of our history to a fundamentally new *integration* that connects *knowledge* to *science* to *actions* to achieve *outcomes*. 
 
-Why? Because the greatest problems of our time - be they inequality, climate, conflict, or how your business can best succeed - can only be solved by understanding how decisions in one realm affect another, and by using the power of data to see further than ever before, along with AI to analzye that data. 
+Why? Because the greatest problems of our time &mdash; be they inequality, climate, conflict, or how your business can best succeed &mdash; can only be solved by understanding how decisions in one realm affect another, and by using the power of data to see further than ever before, along with AI to analzye that data. 
 
 But connecting the disciplines isn't enough. They also have to be connected to the *decisions* made by *people* whose consequences have effects near and far. 
 
-The OpenDI ecosystem - which is centered around the discipline of *Decision Intelligence* (which gives a blueprint for how to fit the pieces together) is the catalyst for this integration. 
+The OpenDI ecosystem &mdash; which is centered around the discipline of *Decision Intelligence* (which gives a blueprint for how to fit the pieces together) is the catalyst for this integration. 
 We're on a mission to empower you to make informed choices in a world that is increasingly volatile, uncertain, complex, and ambiguous.
 
 ## What
@@ -27,25 +27,15 @@ By uniting decision makers, architects, asset managers, simulation managers, adm
 ## OpenDI Standards
 OpenDI is a brand-new initiative, and this is reflected by our small set of initial standards.  You can read them by following the links below.
 
-<<<<<<< Updated upstream
-### [Roles and User Stories](https://opendi-org.github.io/roles-user-stories)
-
-### [JSON Schema Specification](https://opendi-org.github.io/json-schema)
-=======
 ### [Roles and User Stories](http://roles-user-stories.opendi.org)
-Describes a standardized language for talking about decision makers as they formalize - and build computer systems that help them to make - decisions.
+Describes a standardized language for talking about decision makers as they formalize &mdash; and build computer systems that help them to make &mdash; decisions.
 
 ### [JSON Schema Specification](http://json-schema.opendi.org)
 Describes a format for files that contain Causal Decision Models (CDMs): the core representation of DI and the ecosystem.
->>>>>>> Stashed changes
 
 ### [API Specification](./API%20Specification.md)
 Describes an interchange format for how components of a DI system talk to another.  Just as you computer's keyboard can be made by one company, it's chips by another, and your mouse by a third, this API specification allows elements of a DI system to communicate in a standard language, thereby supporting a vibrant ecosystem of vendors, researchers, educators, and users.
 
 ## Contribution
 
-<<<<<<< Updated upstream
-For information on how you can contribute to OpenDI, see the [contribution guide](./How%20To%20Contribute.md).
-=======
 Want to join an exciting group of visionaries who are helping to create OpenDI?  Check out the [contribution guide](./How%20To%20Contribute.md) here.
->>>>>>> Stashed changes
