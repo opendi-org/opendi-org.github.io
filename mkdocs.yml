@@ -3,13 +3,13 @@
 site_name: 'OpenDI Home (DRAFT)'
 repo_url: https://github.com/opendi-org/landing-site        #This is the public repo
 edit_uri: blob/dev/docs                                     #URI Partial, added to repo URL to link to editable version of user's current page
-site_url: https://opendi-org.github.io/home/
+site_url: https://opendi-org
 
 docs_dir: "docs"  #Local directory for docs .md files
 
 nav:
   - Home: index.md
-  - 'Overview': 'OpenDI Intro Material.md'
+  - 'Introduction to OpenDI': 'OpenDI Intro Material.md'
   - 'How to Contribute': 'How To Contribute.md'
   - 'OpenDI Standards':
     - 'Roles and User Stories': https://opendi-org.github.io/roles-user-stories

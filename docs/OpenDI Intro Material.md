@@ -26,7 +26,7 @@ Please work with us as we create the standards that make DI "explode", too: not 
 
 For a standards project to be successful, we have to start with a common language and a shared understanding of the "standard" components of a system.  For the telephone network, this said, "there is such a thing as a telephone, which is dialed in this particular way, which sends a signal down a wire in this way, and it is connected via some kind of wire to a central office (CO), and COs are connected together via long-distance lines".  We do the same thing in DI, where we say, "here are the parts of a DI system, and different people can build different parts of it".
 
-## High-level picture of the reference architecture
+## High-level DI reference architecture illustration
 Figure 2 shows the basic picture of how we see these "standard" components of a DI software system today (note that there are much more detailed versions of this picture that are in development at the moment, this is just a basic one to get you started):
 
 ![High level DI reference architecture](img/di-reference-architecture-blue.png)
