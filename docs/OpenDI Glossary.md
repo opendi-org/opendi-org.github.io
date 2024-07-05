@@ -116,9 +116,9 @@ A register listing all repositories used to store [Decision Artifacts](#decision
 Areas of concern may include uncertainty, provenance, bias for [Decision Elements](#decision-element). It is important to consider concerns that you know exist, as well as ones you can infer exist from your [CDD](#causal-decision-diagram-cdd).
 
 ## Decision Element
- An element of a [CDD](#causal-decision-diagram-cdd) or [CDM](#causal-decision-model-cdm).
+ A component of a [CDD](#causal-decision-diagram-cdd) or [CDM](#causal-decision-model-cdm).
  
-Examples include:
+The types of decison elements are as follows:
 - [Lever](#lever)
 - [External](#external)
 - [Outcome](#outcome)

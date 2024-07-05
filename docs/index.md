@@ -39,3 +39,6 @@ Describes an interchange format for how components of a DI system talk to anothe
 ## Contribution
 
 Want to join an exciting group of visionaries who are helping to create OpenDI?  Check out the [contribution guide](./How%20To%20Contribute.md) here.
+
+## Credits
+David Roberts, Lorien Pratt, Nadine Malcolm, Isaac Kellogg, \<your name here!, [here's how](./How%20To%20Contribute.md)\>.
