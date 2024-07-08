@@ -1,5 +1,7 @@
 # Welcome to OpenDI 
-We're glad you're here!  The purpose of this website is to publish OpenDI standards and assets for you to a) use and b) contribute to.  
+We're glad you're here!  The purpose of this website is to publish OpenDI standards and assets for you to use and contribute to.  
+
+Currently, standards are in draft / working draft format and may need significant additions, adjustments, or other [contributions](./How%20To%20Contribute.md) before they are ready for full use.
 
 ## Who is OpenDI?
 
@@ -30,15 +32,20 @@ OpenDI is a brand-new initiative, and this is reflected by our small set of init
 ### [Roles and User Stories](http://roles-user-stories.opendi.org)
 Describes a standardized language for talking about decision makers as they formalize &mdash; and build computer systems that help them to make &mdash; decisions.
 
-### [JSON Schema Specification](http://json-schema.opendi.org)
+### [(Working Draft) JSON Schema](http://json-schema.opendi.org)
 Describes a format for files that contain Causal Decision Models (CDMs): the core representation of DI and the ecosystem.
+
+> This resource is in **working draft** state, meaning it is still under heavy development.  
+> While this resource may receive significant changes in a short time, comments and other input on its current state are still welcome!
 
 ### [API Specification](./API%20Specification.md)
 Describes an interchange format for how components of a DI system talk to another.  Just as you computer's keyboard can be made by one company, it's chips by another, and your mouse by a third, this API specification allows elements of a DI system to communicate in a standard language, thereby supporting a vibrant ecosystem of vendors, researchers, educators, and users.
+
+> This resource is in **pre-development**, meaning it is not yet ready for public comment.
 
 ## Contribution
 
 Want to join an exciting group of visionaries who are helping to create OpenDI?  Check out the [contribution guide](./How%20To%20Contribute.md) here.
 
 ## Credits
-David Roberts, Lorien Pratt, Nadine Malcolm, Isaac Kellogg, \<your name here!, [here's how](./How%20To%20Contribute.md)\>.
+David Roberts, Lorien Pratt, Nadine Malcolm, Isaac Kellogg, <your name here!, [here's how](./How%20To%20Contribute.md)\>.
