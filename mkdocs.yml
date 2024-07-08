@@ -16,7 +16,7 @@ nav:
     - '(Working Draft) JSON Schema': https://opendi-org.github.io/json-schema
     - 'API Specification': 'API Specification.md'
   - 'How to use OpenDI':
-    - 'Asset Guide': './How-to-use-OpenDI/Asset Guide.md'
+    - 'Resource Guide': './How-to-use-OpenDI/Resource Guide.md'
     - 'Reference Implementations': './How-to-use-OpenDI/Reference Implementations.md'
     - 'Gallery': './How-to-use-OpenDI/Gallery.md'
   - 'OpenDI Glossary': 'OpenDI Glossary.md'

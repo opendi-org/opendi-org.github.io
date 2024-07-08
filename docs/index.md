@@ -1,5 +1,5 @@
 # Welcome to OpenDI 
-We're glad you're here!  The purpose of this website is to publish OpenDI standards and assets for you to use and contribute to.  
+We're glad you're here!  The purpose of this website is to publish OpenDI standards and resources for you to use and contribute to.  
 
 Currently, standards are in draft / working draft format and may need significant additions, adjustments, or other [contributions](./How%20To%20Contribute.md) before they are ready for full use.
 
