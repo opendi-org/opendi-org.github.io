@@ -77,7 +77,7 @@ Examples include:
 - Computation time
 
 ## Convergent Thinking
-Synonymous with Analytical thinking, and somewhat like [Kahnemann's System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems), it means thinking carefully through some reasoning process.
+Synonymous with Analytical thinking, and somewhat like [Kahneman's System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems), it means thinking carefully through some reasoning process.
 
 Compare to [Divergent Thinking](#divergent-thinking).
 
