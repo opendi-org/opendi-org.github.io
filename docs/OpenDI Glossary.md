@@ -11,7 +11,7 @@ Compare this to the examples given for [Choice](#choice) and [Lever](#lever).
 Note:  
 Unlike in a process model, DI does not model a *series* of actions, tasks, or choices, but rather addresses the *consequences* of Actions over which the Decision Maker has no further control after the Action is taken. In our example, we think through the consequences of the marketing budget decision during the DI process, but tasks taken to spend that money are modeled using non-DI approaches like a project schedule.
 
-Note:
+Note:  
 There are things we do that aren't actions in the DI sense. For instance, we might gather some data, talk to employees, or commute to work and back. In the DI context, we talk about Actions in a specific sense as one of several choices we might make.
 
 ## Action-to-Outcome Exploration
@@ -60,14 +60,16 @@ Compare this to the examples given for [Action](#action) and [Lever](#lever).
  An interactive whiteboard where a distributed team can collaborate on building a [CDD](#causal-decision-diagram-cdd).
 
 Examples include:
-* [Zoom](https://www.zoom.com/en/products/online-whiteboard/)
-* [Lucidspark](https://lucidspark.com/landing/create/whiteboard-software)
-* [Microsoft Teams Whiteboard](https://support.microsoft.com/en-us/office/use-whiteboard-in-a-teams-meeting-26f87802-b37f-4af0-806d-af79fbfb8ae6)
+
+- [Zoom](https://www.zoom.com/en/products/online-whiteboard/)
+- [Lucidspark](https://lucidspark.com/landing/create/whiteboard-software)
+- [Microsoft Teams Whiteboard](https://support.microsoft.com/en-us/office/use-whiteboard-in-a-teams-meeting-26f87802-b37f-4af0-806d-af79fbfb8ae6)
 
 ## Computational Resource
 Resources necessary for decision simulation, managed and used by [Decision Simulation Managers](https://opendi-org.github.io/roles-user-stories/Roles/Decision%20Simulation%20Manager) and [Decision Simulation Builders](https://opendi-org.github.io/roles-user-stories/Roles/Decision%20Simulation%20Builder).
 
 Examples include:
+
 - Hardware resources
 	- GPUs
 	- CPUs
@@ -75,7 +77,7 @@ Examples include:
 - Computation time
 
 ## Convergent Thinking
-Synonymous with Analytical thinking, and somewhat like Kahnemann's System 2, it means thinking carefully through some reasoning process.
+Synonymous with Analytical thinking, and somewhat like [Kahnemann's System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems), it means thinking carefully through some reasoning process.
 
 Compare to [Divergent Thinking](#divergent-thinking).
 
@@ -84,13 +86,15 @@ In the context of DI, a decision is about [Actions](#action) leading to [Outcome
 
 Understanding a decision means understanding causal relationships in [Causal Chain](#causal-chain)s.
 
-Note that the word "decision" has other meanings in the world, most often a decision to label or predict something, like a picture of a cat or tomorrow's weather. These are not action-to-outcome decisions, and so are different (but still important!).
+Note:  
+The word "decision" has other meanings in the world, most often a decision to label or predict something, like a picture of a cat or tomorrow's weather. These are not action-to-outcome decisions, and so are different (but still important!).
 
 ## Decision Approach
 A high-level methodology that guides the decision-making process.
 
 Sometimes approaches may be presented as dichotomies.  
 Examples include:
+
 - Data-driven vs. intuitive
 - Autocratic vs. collaborative
 
@@ -103,6 +107,7 @@ A record linking documentation about [Decision Approaches](#decision-approach) w
 Any important piece of documentation for a decision.
  
 Examples include:
+
 - [CDD](#causal-decision-diagram-cdd)(s) created for the decision
 - Documentation about the [Decision Approach](#decision-approach)
 - Other [Decision Documents](#decision-document)
@@ -119,6 +124,7 @@ Areas of concern may include uncertainty, provenance, bias for [Decision Element
  A component of a [CDD](#causal-decision-diagram-cdd) or [CDM](#causal-decision-model-cdm).
  
 The types of decison elements are as follows:
+
 - [Lever](#lever)
 - [External](#external)
 - [Outcome](#outcome)
