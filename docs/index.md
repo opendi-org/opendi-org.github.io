@@ -30,6 +30,7 @@ By uniting decision makers, architects, asset managers, simulation managers, adm
 OpenDI is a brand-new initiative, and this is reflected by our small set of initial standards.  You can read them by following the links below.
 
 ### [Roles and User Stories](http://roles-user-stories.opendi.org)
+
 Describes a standardized language for talking about decision makers as they formalize &mdash; and build computer systems that help them to make &mdash; decisions.
 
 ### [(Working Draft) JSON Schema](http://json-schema.opendi.org)
