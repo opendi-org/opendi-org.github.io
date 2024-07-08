@@ -27,22 +27,28 @@ By uniting decision makers, architects, asset managers, simulation managers, adm
 [Learn More >>](./OpenDI%20Intro%20Material.md)
 
 ## OpenDI Standards
-OpenDI is a brand-new initiative, and this is reflected by our small set of initial standards.  You can read them by following the links below.
+OpenDI is a brand-new initiative, and this is reflected by our small set of initial standards drafts.  You can read them by following the links below.
 
-### [Roles and User Stories](http://roles-user-stories.opendi.org)
+### Roles and User Stories
 
 Describes a standardized language for talking about decision makers as they formalize &mdash; and build computer systems that help them to make &mdash; decisions.
 
-### [(Working Draft) JSON Schema](http://json-schema.opendi.org)
+[View Resource >>](http://roles-user-stories.opendi.org)
+
+### (Working Draft) JSON Schema
 Describes a format for files that contain Causal Decision Models (CDMs): the core representation of DI and the ecosystem.
 
 > This resource is in **working draft** state, meaning it is still under heavy development.  
 > While this resource may receive significant changes in a short time, comments and other input on its current state are still welcome!
 
-### [API Specification](./API%20Specification.md)
+[View Resource >>](http://json-schema.opendi.org)
+
+### API Specification
 Describes an interchange format for how components of a DI system talk to another.  Just as you computer's keyboard can be made by one company, it's chips by another, and your mouse by a third, this API specification allows elements of a DI system to communicate in a standard language, thereby supporting a vibrant ecosystem of vendors, researchers, educators, and users.
 
 > This resource is in **pre-development**, meaning it is not yet ready for public comment.
+
+[View Resource >> ](./API%20Specification.md)
 
 ## Contribution
 
