@@ -1,6 +1,6 @@
 ## OpenDI Glossary
 
-This glossary is a cross-document resource, intended for quick reference.
+This glossary provides our agreed-to definitions of "terms of art" in DI, to reduce ambiguity and increase clarity, reducing confusion, as we work together.
 
 ## Action
  The behavior that implements a [Choice](#choice) that has been made with the intent of achieving an [Outcome](#outcome). Actions are enacted by [Decision Maker](#decision-maker)(s) once [Decision Making](#decision-making) is complete.
@@ -11,8 +11,14 @@ Compare this to the examples given for [Choice](#choice) and [Lever](#lever).
 Note:  
 Unlike in a process model, DI does not model a *series* of actions, tasks, or choices, but rather addresses the *consequences* of Actions over which the Decision Maker has no further control after the Action is taken. In our example, we think through the consequences of the marketing budget decision during the DI process, but tasks taken to spend that money are modeled using non-DI approaches like a project schedule.
 
+Note:  
+There are things we do that aren't actions in the DI sense. For instance, we might gather some data, talk to employees, or commute to work and back. In the DI context, we talk about Actions in a specific sense as one of several choices we might make.
+
 ## Action-to-Outcome Exploration
- The process of using *forward simulation* in a user interface or batch setting to explore how different values of actions lead to different intermediates and outcomes.
+ The process of using *forward simulation* 
+ to explore how different values of actions lead to different intermediates and outcomes.
+
+ Without DI, most action-to-outcome exploration is done "in your head", imagining the consequences of various actions you might take.  DI says, "let's use a computer to help with that process", providing this exploration through a user interface or performed overnight in a batch setting.
 
 ## Application Programmer Interface (API)
  A software interface with well-defined inputs, outputs, and behavior that allows a program like a CDD simulator to use the services of another independently developed piece of software like a Technology Service implementing a Decision Asset.
@@ -23,10 +29,14 @@ Unlike in a process model, DI does not model a *series* of actions, tasks, or ch
 ## Causal Chain
  A cause-and-effect path through a [Causal Decision Diagram](#causal-decision-diagram-cdd) starting at a [Lever](#lever) ([Action](#action)) and ending at an [Outcome](#outcome).
 
+ Note that in DI, there are varying levels of what we mean by "causal" in a causal chain. When we first elicit causal chains from subject-matter experts, we can honestly say that they are more "causal-ish" than anything else, because people aren't great at separating causation from correlation, and because they sometimes mix in the fact that 3 and 5 "cause" 7 if we add them together - ways of causal thinking that don't fit a strict formalism.
+
+ In DI, we find it's important to capture these "causal-ish" chains, and then to refine them as needed into software, when ends up being more constrained and formal.
+
 ## Causal Decision Diagram (CDD)
  A diagram that shows the[Decision Elements](#decision-element), linked by [Causal Chains](#causal-chain), pertinent to a [Decision](#decision). 
 
-See also: [Causal Decision Model (CDM)](#causal-decision-model-cdm)
+See also: [Causal Decision Model (CDM)](#causal-decision-model-cdm), which is a computer implementation of the CDD.
 
 For an introduction to CDD concepts, see [this article by Mark Zangari](https://www.lorienpratt.com/guest-post-connecting-decisions-to-data-a-case-study-part-2-cdd-basics/).
 
@@ -50,14 +60,16 @@ Compare this to the examples given for [Action](#action) and [Lever](#lever).
  An interactive whiteboard where a distributed team can collaborate on building a [CDD](#causal-decision-diagram-cdd).
 
 Examples include:
-* [Zoom](https://www.zoom.com/en/products/online-whiteboard/)
-* [Lucidspark](https://lucidspark.com/landing/create/whiteboard-software)
-* [Microsoft Teams Whiteboard](https://support.microsoft.com/en-us/office/use-whiteboard-in-a-teams-meeting-26f87802-b37f-4af0-806d-af79fbfb8ae6)
+
+- [Zoom](https://www.zoom.com/en/products/online-whiteboard/)
+- [Lucidspark](https://lucidspark.com/landing/create/whiteboard-software)
+- [Microsoft Teams Whiteboard](https://support.microsoft.com/en-us/office/use-whiteboard-in-a-teams-meeting-26f87802-b37f-4af0-806d-af79fbfb8ae6)
 
 ## Computational Resource
 Resources necessary for decision simulation, managed and used by [Decision Simulation Managers](https://opendi-org.github.io/roles-user-stories/Roles/Decision%20Simulation%20Manager) and [Decision Simulation Builders](https://opendi-org.github.io/roles-user-stories/Roles/Decision%20Simulation%20Builder).
 
 Examples include:
+
 - Hardware resources
 	- GPUs
 	- CPUs
@@ -65,7 +77,7 @@ Examples include:
 - Computation time
 
 ## Convergent Thinking
- Analytical thinking.
+Synonymous with Analytical thinking, and somewhat like [Kahneman's System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems), it means thinking carefully through some reasoning process.
 
 Compare to [Divergent Thinking](#divergent-thinking).
 
@@ -74,11 +86,15 @@ In the context of DI, a decision is about [Actions](#action) leading to [Outcome
 
 Understanding a decision means understanding causal relationships in [Causal Chain](#causal-chain)s.
 
+Note:  
+The word "decision" has other meanings in the world, most often a decision to label or predict something, like a picture of a cat or tomorrow's weather. These are not action-to-outcome decisions, and so are different (but still important!).
+
 ## Decision Approach
 A high-level methodology that guides the decision-making process.
 
 Sometimes approaches may be presented as dichotomies.  
 Examples include:
+
 - Data-driven vs. intuitive
 - Autocratic vs. collaborative
 
@@ -91,6 +107,7 @@ A record linking documentation about [Decision Approaches](#decision-approach) w
 Any important piece of documentation for a decision.
  
 Examples include:
+
 - [CDD](#causal-decision-diagram-cdd)(s) created for the decision
 - Documentation about the [Decision Approach](#decision-approach)
 - Other [Decision Documents](#decision-document)
@@ -104,9 +121,10 @@ A register listing all repositories used to store [Decision Artifacts](#decision
 Areas of concern may include uncertainty, provenance, bias for [Decision Elements](#decision-element). It is important to consider concerns that you know exist, as well as ones you can infer exist from your [CDD](#causal-decision-diagram-cdd).
 
 ## Decision Element
- An element of a [CDD](#causal-decision-diagram-cdd) or [CDM](#causal-decision-model-cdm).
+ A component of a [CDD](#causal-decision-diagram-cdd) or [CDM](#causal-decision-model-cdm).
  
-Examples include:
+The types of decison elements are as follows:
+
 - [Lever](#lever)
 - [External](#external)
 - [Outcome](#outcome)
@@ -141,7 +159,7 @@ Any documents that captures the rationale for the decision and the work done by 
  Constraints, boundaries, and/or requirements for the decision that come from outside of the [Decision Team](#decision-team).
 
 ## Decision Maker
- The person who actually makes the decision, that is the person who at some point takes an irrevocable Action (or Actions) that begin a cause-and-effect chain that will eventually lead to Outcome(s).
+ The person who actually makes the decision, that is the person who at some point takes an irrevocable Action (or Actions) that begin a cause-and-effect chain that are intended to eventually lead to Outcome(s).
 
 This role is described in [Roles and User Stories](https://opendi-org.github.io/roles-user-stories#decision-maker).
  
@@ -157,7 +175,7 @@ This role is described in [Roles and User Stories](https://opendi-org.github.io/
  The process of creating a [CDD](#causal-decision-diagram-cdd) that models the decision, showing the chains of dependencies that lead from actions to outcomes and allowing [Decision Maker(s)](#decision-maker) to align about the decision rationale. 
 
 ## Decision Model
- A computational rendering of a [Causal Decision Diagram](#causal-decision-diagram-cdd).
+ A computational rendering of a [Causal Decision Diagram (CDD)](#causal-decision-diagram-cdd).
 
 ## Decision Simulation
  Understanding the dynamics of the decision model and identifying patterns of decision behavior like feedback loops and unintended consequences and understand the sensitivity of the decision to various decision elements.
@@ -248,7 +266,7 @@ For example, if a Decision has an Outcome of "return on invested capital, measur
 ## Ground Truth
  Fundamental or observed truth used to calibrate a system. Often, these systems are [Decision Assets](#decision-asset).
  
- For example, a remote sensor against a measurement on-site, "on the ground" or a machine learning model against data with known results.
+ For example, a remote sensor reading against a measurement on-site, "on the ground" or machine learning input data against  known labels.
 
 ## Hierarchical Decision Model
  A [CDD](#causal-decision-diagram-cdd) that incorporates [Decision Sub-Models](#decision-sub-model).
