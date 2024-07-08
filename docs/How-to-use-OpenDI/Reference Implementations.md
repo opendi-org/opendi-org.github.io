@@ -4,4 +4,4 @@ Keep an eye on [the OpenDI Discord Server](https://discord.gg/FtAX3JStJz) for an
 
 # What will this be?
 
-Similar to the [Gallery](./How-to-use-OpenDI/Gallery.md), reference implementations will demonstrate OpenDI compliance with complete example projects.
+Similar to the [Gallery](./Gallery.md), reference implementations will demonstrate OpenDI compliance with complete example projects.
