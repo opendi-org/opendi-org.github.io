@@ -4,4 +4,4 @@ Keep an eye on [the OpenDI Discord Server](https://discord.gg/FtAX3JStJz) for an
 
 # What will this be?
 
-The asset guide will describe all the assets comprising the OpenDI standards at a high level, and provide guidance about how to use them.
+The resource guide will describe all the resources comprising the OpenDI standards at a high level, and provide guidance about how to use them.

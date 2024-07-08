@@ -12,11 +12,11 @@ nav:
   - 'Introduction to OpenDI': 'OpenDI Intro Material.md'
   - 'How to Contribute': 'How To Contribute.md'
   - 'OpenDI Standards':
-    - 'Roles and User Stories': https://opendi-org.github.io/roles-user-stories
-    - '(Working Draft) JSON Schema': https://opendi-org.github.io/json-schema
+    - 'Roles and User Stories': http://roles-user-stories.opendi.org
+    - '(Working Draft) JSON Schema': http://json-schema.opendi.org
     - 'API Specification': 'API Specification.md'
   - 'How to use OpenDI':
-    - 'Asset Guide': './How-to-use-OpenDI/Asset Guide.md'
+    - 'Resource Guide': './How-to-use-OpenDI/Resource Guide.md'
     - 'Reference Implementations': './How-to-use-OpenDI/Reference Implementations.md'
     - 'Gallery': './How-to-use-OpenDI/Gallery.md'
   - 'OpenDI Glossary': 'OpenDI Glossary.md'
