@@ -1,7 +1,10 @@
 # Welcome to OpenDI 
 We're glad you're here!  The purpose of this website is to publish OpenDI standards, materials, and resources for you to use and contribute to.  
 
-Currently, standards are in draft / working draft format and may need significant additions, adjustments, or other [contributions](./How%20To%20Contribute.md) before they are ready for full use.
+Currently, standards are in draft / working draft format and may need significant additions, adjustments, or other contributions before they are ready for full use. 
+
+**We want your input!**  
+Please consider [contributing](./How%20To%20Contribute.md), and joining the [OpenDI Discord community](https://discord.gg/FtAX3JStJz).
 
 ## Who is OpenDI?
 
@@ -52,7 +55,13 @@ Describes an interchange format for how components of a DI system talk to anothe
 
 ## Contribution
 
-Want to join an exciting group of visionaries who are helping to create OpenDI?  Check out the [contribution guide](./How%20To%20Contribute.md) here.
+Want to join an exciting group of visionaries who are helping to create OpenDI?
+
+Check out the contribution guide!  
+[View Contribution Guide >>](./How%20To%20Contribute.md)  
+
+Join the OpenDI Discord community!  
+<iframe src="https://discord.com/widget?id=1208154608984129557&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 ## Credits
 David Roberts, Lorien Pratt, Nadine Malcolm, Isaac Kellogg, <your name here!, [here's how](./How%20To%20Contribute.md)\>.
