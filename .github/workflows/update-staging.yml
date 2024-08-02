@@ -1,0 +1,66 @@
+name: Sync main and dev with staging branch
+
+# Get changes from main and dev, combine them in deployment-staging
+# From dev, take the contents of docs/ and sidebars.js . These make up the "next" docs version
+# From main, take everything else. This includes site config, static content, all src files, and all "released" versions of the docs
+
+on:
+    workflow_run:
+        workflows: ["Test deployment to dev", "Test deployment to main"]
+        types:
+          - completed
+    
+    workflow_dispatch:  # Allow manual re-run from Actions tab
+
+
+jobs:
+    combine-changes:
+        # Only run if the triggering workflow succeeded, or if triggered manually
+        if: ${{github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+        name: Gather changes and push
+        permissions:
+          contents: write # Permission to write (push) to repo contents
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+              
+              # Setup user info and origin url so push will succeed
+            - name: Configure git
+              run: |
+                git config --global user.name 'Actions: Generate MKDocs Website'
+                git config --global user.email 'actions-generate-mkdocs-website@users.noreply.github.com'
+                git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+            
+              # Check for an origin/dev and origin/main.
+              # Switch to them, to allow future commands to refer to 'dev' and 'main' locally
+            - name: Get a local copy of dev branch
+              run: git switch dev
+            - name: Get a local copy of main branch
+              run: git switch main
+
+              # We'll collect changes in deployment-staging
+              # Start fresh every time, in case files have been deleted
+            - name: Switch to staging branch
+              run: |
+                git switch deployment-staging
+                rm -rf ./*
+            
+              # Grab only the non-"Next" docs from main
+              # Uses "exclude" pathspec. See https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-exclude
+            - name: Get versioned changes from main
+              run: git checkout main ":!docs/*" ":!sidebars.js"
+            
+              # Grab only the "Next" version docs from dev
+            - name: Get latest changes from dev
+              run: git checkout dev ":docs/*" ":sidebars.js"
+            
+            - name: Update staging branch with changes
+              run: |
+                git add *
+                git commit -m "Action: Auto-update staging branch"
+                git push
+                
