@@ -1,0 +1,67 @@
+name: Build and prep for Pages Deployment
+
+# Create new build files, and put them in the gh-pages branch where GitHub will deploy them to Pages
+
+on:
+  push:
+    branches:
+      - deployment-staging
+  workflow_run:
+    workflows: ["Sync main and dev with staging branch"]
+    types:
+      - completed
+  
+  workflow_dispatch:  # Allow manual re-run from Actions tab
+
+jobs:
+  build:
+    # Only run if the triggering workflow succeeded, or if triggered manually
+    if: ${{github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    name: Build Docusaurus
+    permissions:
+      contents: write # Permission to write (push) to repo contents
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+        # Setup user info and origin url so push will succeed
+      - name: Configure git
+        run: |
+          git config --global user.name 'Actions: Generate MKDocs Website'
+          git config --global user.email 'actions-generate-mkdocs-website@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+      
+        # Build the staged changes to create build artifacts
+      - name: Switch to staging branch
+        run: git switch deployment-staging
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
+
+        # Need to put built site in the gh-pages branch for deployment
+      - name: Replace build artifacts
+        # Move site build files out of repo, switch branches, replace old site build files with new files
+        run: |
+          mkdir ../TEMP
+          mv ./build ../TEMP/docs
+          git switch gh-pages
+          rm -rf ./docs/
+          mv ../TEMP/docs ./docs
+
+
+      - name: Push new source
+        run: |
+          git add docs/*
+          git commit -m "Action: Move pages src to staging dir"
+          git push
