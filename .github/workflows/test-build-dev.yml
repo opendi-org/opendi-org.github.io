@@ -1,0 +1,39 @@
+name: Test deployment to dev
+
+# Checkout most-recent changes for dev, then run build command to check for errors
+
+on:
+  pull_request: # Validate proposed changes
+    branches:
+      - dev
+    paths:
+      - docs/*
+      - sidebars.js
+
+  push:         # Validate incoming changes
+    branches:
+      - dev
+    paths:
+      - docs/*
+      - sidebars.js
+  
+  workflow_dispatch:  # Allow manual re-run from Actions tab
+
+
+jobs:
+  test-deploy:
+    name: Test deployment (dev)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Test build website
+        run: npm run build
