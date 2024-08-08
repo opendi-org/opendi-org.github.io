@@ -1,7 +1,8 @@
 # Contributing to OpenDI Standards
 
 We're glad you want to help out!  
-OpenDI is a community initiative, so these standards are open to feedback and contributions.  Contributions and feedback follow typical GitHub processes.
+OpenDI is a community initiative, so these standards are open to feedback and contributions. [Contributions](#direct-contribution) follow typical GitHub processes, and we accept [feedback](#feedback) via multiple channels.  
+The community has organized itself around the [OpenDI Discord server](https://discord.gg/FtAX3JStJz). We hope to see you there!
 
 ## Project Structure
 
@@ -25,6 +26,20 @@ Holds the OpenDI JSON Schema for Causal Decision Models, and source for the sche
 
 [View Repo >>](https://github.com/opendi-org/json-schema)
 
+## Versions
+
+This project uses versioned releases for site content. By default, the site displays the latest released version to all users. To access other versions, use the versions dropdown menu on the right side of the navbar.
+
+**Use the versions dropdown menu in the top-right corner of each page to switch between documentation versions.**
+![Versions Dropdown](./img/contribution-guide/Website-Version-Dropdown.png)
+
+### Browse Upcoming Changes
+
+The site provides a public view that integrates all proposed changes that have been merged to the development branch of each repo. This means contributors can browse upcoming changes, and provide feedback on the most up-to-date working versions of all OpenDI materials.
+
+**To view the latest changes from development branches, select the `Next` option in the [versions](#versions) dropdown menu.**  
+![Next Version](./img/contribution-guide/Website-Next-Version.png)
+
 ## Feedback
 
 We use two main channels for feedback submission:
@@ -44,10 +59,24 @@ To access the Discord channels for these OpenDI materials:
 1. Select the "I would like to contribute to OpenDI standards" option in the initial join question.  
     ![Discord Contributor Option](./img/contribution-guide/Discord-Contributor.png)
 2. Read and accept the server rules, by clicking "Finish".
-3. Look for the Ecosystem Resources channel category in your channel list  
+3. Look for the Ecosystem Resources channel category in your channel list.  
     ![Discord Contributor Channels](./img/contribution-guide/Discord-Contributor-Channels.png)  
     If you do not see the channel category, check the "Browse Channels" option in the "Channels and Roles" page, at the top of the channel list.  
     ![Discord Browse Channels](./img/contribution-guide/Discord-Browse-Channels.png)
+
+#### Posting feedback to Discord forum channels
+
+The Ecosystem Resources channels on Discord use a forum posting format. See [this Discord FAQ](https://support.discord.com/hc/en-us/articles/6208479917079-Forum-Channels-FAQ) for more information on Discord's forum channels.
+
+To create a feedback post on Discord:
+
+1. Navigate to the appropriate channel (described [above](#discord))
+2. Click **New Post**  
+    ![Discord New Forum Post](./img/contribution-guide/Discord-New-Post.png)
+3. Fill in your **title** and the **message** for your post, and click **Post**.  
+    ![Discord Post to Forum](./img/contribution-guide/Discord-New-Post-Finish.png)
+
+Our posting guidelines for Discord are intentionally loose. If you have a conversation topic related to any of the resources here on OpenDI.org, **create a post!**
 
 ### GitHub Issues
 GitHub Issues are best for providing actionable feedback about individual repositories, including:
@@ -94,7 +123,10 @@ To submit an issue,
 
 Direct contributions are welcome! Contributions should follow the standard [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) and [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) workflow. Forks should use `dev` as their target working branch.
 
-To simplify this process, the website provides direct links to edit each page in the GitHub web client.
+To simplify this process, the website provides direct links to edit each page in the GitHub web client. To find this link, **ensure you are on the `Next` version of the docs**, then scroll to the bottom of the page.  
+See [Browse Upcoming Changes](#browse-upcoming-changes).
 
-**Use the Edit Page link to access the GitHub web client and edit the source for the current page.**
+**Use the "Edit this page" link at the bottom of each page to access the GitHub web client and edit the source for the current page.**
 ![GitHub Edit Page link](./img/contribution-guide/GitHub-Edit-Link.png)  
+
+Looking for more technical information about project maintenance, deployment, and Docusuarus configuration? Check out the [maintainer guide](https://github.com/opendi-org/landing-site/tree/main/Maintainer%20Guide#maintainer-guide) on GitHub.
