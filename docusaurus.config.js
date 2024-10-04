@@ -113,7 +113,7 @@ const config = {
                 href: 'http://opendi.org/roles-user-stories'
               },
               {
-                label: 'JSON Schema',
+                label: 'API Specification',
                 href: 'http://opendi.org/api-specification'
               },
             ],

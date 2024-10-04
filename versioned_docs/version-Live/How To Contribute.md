@@ -20,9 +20,9 @@ Holds source content describing Roles for a DI team, and the user stories for ea
 
 [View Repo >>](https://github.com/opendi-org/roles-user-stories)
 
-### JSON Schema
+### API Specification
 
-Holds the OpenDI JSON Schema for Causal Decision Models, and source for the schema's documentation.
+Holds the OpenDI API Specification for interoperability among DI software systems and components.
 
 [View Repo >>](https://github.com/opendi-org/api-specification)
 
