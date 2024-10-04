@@ -36,7 +36,7 @@ OpenDI is a brand-new initiative, and this is reflected by our small set of init
 
 Describes a standardized language for talking about decision makers as they formalize &mdash; and build computer systems that help them to make &mdash; decisions.
 
-[View Resource >>](http://roles-user-stories.opendi.org)
+[View Resource >>](http://opendi.org/roles-user-stories)
 
 ### (Working Draft) JSON Schema
 Describes a format for files that contain Causal Decision Models (CDMs): the core representation of DI and the ecosystem.

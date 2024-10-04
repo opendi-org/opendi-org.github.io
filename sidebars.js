@@ -26,7 +26,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Roles and User Stories',
-          href: 'http://roles-user-stories.opendi.org'
+          href: 'http://opendi.org/roles-user-stories'
         },
         {
           type: 'link',
