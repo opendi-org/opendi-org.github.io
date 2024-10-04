@@ -13,7 +13,7 @@ assignees: ''
 Please submit your feedback to the most relevant repository:
 - [opendi-org/opendi-org.github.io](https://github.com/opendi-org/opendi-org.github.io) for general OpenDI feedback, or feedback related to the OpenDI homepage and related content
 - [opendi-org/roles-user-stories](https://github.com/opendi-org/roles-user-stories) for feedback related to the OpenDI roles and user stories
-- [opendi-org/json-schema](https://github.com/opendi-org/json-schema) for feedback related to the OpenDI JSON Schema
+- [opendi-org/api-specification](https://github.com/opendi-org/api-specification) for feedback related to the OpenDI API Specification
 
 **Always use the Issue search feature to see if your report, request, or feedback already exists!**  
 If your issue already exists, add your voice to the comments section! Provide your unique perspective, additional info, etc.
