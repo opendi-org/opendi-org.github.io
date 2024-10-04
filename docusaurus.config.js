@@ -114,7 +114,7 @@ const config = {
               },
               {
                 label: 'JSON Schema',
-                href: 'http://json-schema.opendi.org'
+                href: 'http://opendi.org/api-specification'
               },
             ],
           },

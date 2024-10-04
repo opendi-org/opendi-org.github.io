@@ -30,13 +30,8 @@ const sidebars = {
         },
         {
           type: 'link',
-          label: '(Working Draft) JSON Schema',
-          href: 'http://json-schema.opendi.org'
-        },
-        {
-          type: 'doc',
-          label: 'API Specification',
-          id: 'API Specification'
+          label: '(Working Draft) API Specification',
+          href: 'http://opendi.org/api-specification'
         },
       ]
     },

@@ -38,20 +38,15 @@ Describes a standardized language for talking about decision makers as they form
 
 [View Resource >>](http://opendi.org/roles-user-stories)
 
-### (Working Draft) JSON Schema
-Describes a format for files that contain Causal Decision Models (CDMs): the core representation of DI and the ecosystem.
-
-> This resource is in **working draft** state, meaning it is still under heavy development.  
-> While this resource may receive significant changes in a short time, comments and other input on its current state are still welcome!
-
-[View Resource >>](http://json-schema.opendi.org)
-
-### API Specification
+### (Working Draft) API Specification
 Describes an interchange format for how components of a DI system talk to another.  Just as you computer's keyboard can be made by one company, it's chips by another, and your mouse by a third, this API specification allows elements of a DI system to communicate in a standard language, thereby supporting a vibrant ecosystem of vendors, researchers, educators, and users.
 
-> This resource is in **pre-development**, meaning it is not yet ready for public comment.
+The associated JSON Schema describes a format for files that contain Causal Decision Models (CDMs): the core representation of DI and the ecosystem.
 
-[View Resource >> ](./API%20Specification.md)
+> This resource is in **working draft** state, meaning it is still under heavy development.  
+> While this resource may receive significant changes in a short time, comments and other input on its current state are welcome!
+
+[View Resource >>](http://opendi.org/api-specification)
 
 ## Contribution
 
