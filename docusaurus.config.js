@@ -16,12 +16,13 @@ const config = {
   url: 'https://opendi.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
+  // This will be our homepage, so it will go at the base path '/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'opendi-org', // Usually your GitHub org/user name.
-  projectName: 'landing-site', // Usually your repo name.
+  projectName: 'landing-site',    // Leaving this as landing-site for now. I think this is more descriptive than opendi-org.github.io. From testing, this shouldn't impact deployment.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -49,7 +50,7 @@ const config = {
             {
               return undefined;
             }
-            return "https://github.com/opendi-org/landing-site/tree/dev/" + versionDocsDirPath + "/" + docPath;
+            return "https://github.com/opendi-org/opendi-org.github.io/tree/dev/" + versionDocsDirPath + "/" + docPath;
           },
 
           routeBasePath: '/'
@@ -86,7 +87,7 @@ const config = {
           {
             'aria-label': 'GitHub Repo',
             className: 'navbar--github-link',
-            href: 'https://github.com/opendi-org/landing-site',
+            href: 'https://github.com/opendi-org/opendi-org.github.io',
             position: 'right',
           },
           {

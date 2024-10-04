@@ -11,7 +11,7 @@ assignees: ''
 (To save space, you may delete this section of the template before submitting your issue)
 
 Please submit your feedback to the most relevant repository:
-- [opendi-org/landing-site](https://github.com/opendi-org/landing-site) for general OpenDI feedback, or feedback related to the OpenDI homepage and related content
+- [opendi-org/opendi-org.github.io](https://github.com/opendi-org/opendi-org.github.io) for general OpenDI feedback, or feedback related to the OpenDI homepage and related content
 - [opendi-org/roles-user-stories](https://github.com/opendi-org/roles-user-stories) for feedback related to the OpenDI roles and user stories
 - [opendi-org/json-schema](https://github.com/opendi-org/json-schema) for feedback related to the OpenDI JSON Schema
 

@@ -12,7 +12,7 @@ This project is divided into 3 main repositories, holding different content:
 
 Holds the source content for the main OpenDI landing pages, including introductory and cross-document resources like this contribution guide.
 
-[View Repo >>](https://github.com/opendi-org/landing-site)
+[View Repo >>](https://github.com/opendi-org/opendi-org.github.io)
 
 ### Roles and User Stories
 
@@ -129,4 +129,4 @@ See [Browse Upcoming Changes](#browse-upcoming-changes).
 **Use the "Edit this page" link at the bottom of each page to access the GitHub web client and edit the source for the current page.**
 ![GitHub Edit Page link](./img/contribution-guide/GitHub-Edit-Link.png)  
 
-Looking for more technical information about project maintenance, deployment, and Docusuarus configuration? Check out the [maintainer guide](https://github.com/opendi-org/landing-site/tree/main/Maintainer%20Guide#maintainer-guide) on GitHub.
+Looking for more technical information about project maintenance, deployment, and Docusuarus configuration? Check out the [maintainer guide](https://github.com/opendi-org/opendi-org.github.io/tree/main/Maintainer%20Guide#maintainer-guide) on GitHub.
