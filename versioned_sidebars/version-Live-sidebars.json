@@ -22,17 +22,12 @@
         {
           "type": "link",
           "label": "Roles and User Stories",
-          "href": "http://roles-user-stories.opendi.org"
+          "href": "http://opendi.org/roles-user-stories"
         },
         {
           "type": "link",
-          "label": "(Working Draft) JSON Schema",
-          "href": "http://json-schema.opendi.org"
-        },
-        {
-          "type": "doc",
-          "label": "API Specification",
-          "id": "API Specification"
+          "label": "(Working Draft) API Specification",
+          "href": "http://opendi.org/api-specification"
         }
       ]
     },
