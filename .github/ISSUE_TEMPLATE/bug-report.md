@@ -27,7 +27,7 @@ Please fill in the remaining portions of the template to the best of your abilit
 > Which category best fits this bug? Please indicate one of the following:
 > - **Content**: Bug concerns the standards content itself (inconsistency, typo, unclear, etc.)
 > - **Site**: Bug concerns the public website (broken link, error 404/missing content, etc.)
-> - **Deployment**: Bug concerns the deployment process (GitHub Actions, mkdocs generation process or configuration, etc.)
+> - **Deployment**: Bug concerns the deployment process (GitHub Actions, Docusaurus generation process or configuration, etc.)
 
 ## To Reproduce
 > Steps to reproduce the behavior:
