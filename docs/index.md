@@ -56,7 +56,7 @@ The associated JSON Schema describes a format for files that contain Causal Deci
 Developed alongside the OpenDI standards, these open source projects demonstrate OpenDI compliance with fully-functional example implementations.
 
 *CDD Authoring Tool*  
-![CDD AUthoring Tool Preview](./img/CDD%20Authoring%20Tool%20Preview.png)  
+![CDD AUthoring Tool Preview](./img/Authoring%20Tool%20Demo.gif)  
 
 *Simple Model API (Go)*  
 ![Model API Preview](./img/Model%20API%20Preview.png)

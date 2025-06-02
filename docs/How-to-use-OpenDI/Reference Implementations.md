@@ -6,11 +6,11 @@ These projects are currently under active development, but prototypes and source
 
 [Try it out >>](https://opendi.org/cdd-authoring-tool/)
 
-![CDD Authoring Tool Preview](../img/CDD%20Authoring%20Tool%20Preview.png)
+![CDD Authoring Tool Preview](../img/Authoring%20Tool%20Demo.gif)
 
-This tool allows you to construct OpenDI standards-compliant Causal Decision Diagrams in your browser. It offers a graphical view using the [JointJS](https://www.jointjs.com/) graphing library, and a JSON view using the [svelte-jsoneditor](https://github.com/josdejong/svelte-jsoneditor) project.
+This tool allows you to view, author, and simulate OpenDI standards-compliant Causal Decision Models in your browser. Built with [React](https://react.dev/), the tool offers multiple ways to view and edit decision models, CDDs, and runnable models.
 
-This project aims to demonstrate a working use case for the [OpenDI JSON Schema](https://opendi.org/api-specification/schemas/cdm-full-schema). The JSON editor view dynamically mirrors changes and selections from the graphical view, and vice versa, allowing you to interactively explore and manipulate the structure of a Causal Decision Model's JSON data.
+This project aims to demonstrate a working use case for the [OpenDI JSON Schema](https://opendi.org/api-specification/schemas/cdm-full-schema). The JSON editor view dynamically mirrors changes and selections from the graphical view, and vice versa, allowing you to interactively explore and manipulate the structure of a Causal Decision Model's JSON data. The JSON view uses [svelte-jsoneditor](https://github.com/josdejong/svelte-jsoneditor).
 
 ### Contributors
 
