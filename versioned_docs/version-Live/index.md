@@ -83,6 +83,10 @@ David Roberts, Lorien Pratt, Nadine Malcolm, Isaac Kellogg.
 
 Add your name here! [Here's how.](./How%20To%20Contribute.md)
 
+### Supporters
+![USDA Logo](img/usda-logo-color.svg)  
+This project was supported in part by the intramural research program of the U.S. Department of Agriculture, National Institute of Food and Agriculture, Agriculture and Food Research Initiative (AFRI) Data Science for Food and Agriculture program (2022-67021-37137).
+
 ### OpenDI Ambassadors
 Kaan Zaimoglu
 
