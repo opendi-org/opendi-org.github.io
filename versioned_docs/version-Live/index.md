@@ -51,6 +51,21 @@ The associated JSON Schema describes a format for files that contain Causal Deci
 
 [View Resource >>](http://opendi.org/api-specification)
 
+## Reference Implementations
+
+Developed alongside the OpenDI standards, these open source projects demonstrate OpenDI compliance with fully-functional example implementations.
+
+*CDD Authoring Tool*  
+![CDD AUthoring Tool Preview](./img/Authoring%20Tool%20Demo.gif)  
+
+*Simple Model API (Go)*  
+![Model API Preview](./img/Model%20API%20Preview.png)
+
+*Docker Compose Authoring Tool*  
+![Authoring Tool Compose Preview](./img/Authoring%20Tool%20Compose%20Preview.png)
+
+[View Reference Implementations >>](./How-to-use-OpenDI/Reference%20Implementations.md)
+
 ## Contribution
 
 Want to join an exciting group of visionaries who are helping to create OpenDI?
@@ -67,6 +82,10 @@ Join the OpenDI Discord community!
 David Roberts, Lorien Pratt, Nadine Malcolm, Isaac Kellogg.
 
 Add your name here! [Here's how.](./How%20To%20Contribute.md)
+
+### Supporters
+![USDA Logo](img/usda-logo-color.svg)  
+This project was supported in part by the intramural research program of the U.S. Department of Agriculture, National Institute of Food and Agriculture, Agriculture and Food Research Initiative (AFRI) Data Science for Food and Agriculture program (2022-67021-37137).
 
 ### OpenDI Ambassadors
 Kaan Zaimoglu
