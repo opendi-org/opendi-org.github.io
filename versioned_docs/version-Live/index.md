@@ -18,7 +18,7 @@ We are a decentralized group of entrepreneurs, executives, researchers, governme
 
 OpenDI's mission is to empower you to make informed choices in a world that is increasingly volatile, uncertain, complex, and ambiguous.
 
-OpenDI.org is an integrated ecosystem that creates standards for Decision Intelligence. We curate a source of truth for how Decision Intelligence software systems interact, thereby allowing small and large participants alike to provide parts of an overall solution. By uniting decision makers, architects, asset managers, simulation managers, administrators, engineers, and researchers around a common framework, connecting technology to actions that lead to outcomes, we are paving the way for diverse contributors to solve local and global challenges, and to lower barriesr to entry for all Decision Intelligence stakeholders.
+OpenDI.org is an integrated ecosystem that creates standards for Decision Intelligence. We curate a source of truth for how Decision Intelligence software systems interact, thereby allowing small and large participants alike to provide parts of an overall solution. By uniting decision makers, architects, asset managers, simulation managers, administrators, engineers, and researchers around a common framework, connecting technology to actions that lead to outcomes, we are paving the way for diverse contributors to solve local and global challenges, and to lower barriers to entry for all Decision Intelligence stakeholders.
 
 [Learn More >>](./OpenDI%20Intro%20Material.md)
 
