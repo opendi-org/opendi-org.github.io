@@ -31,8 +31,8 @@ jobs:
               # Setup user info and origin url so push will succeed
             - name: Configure git
               run: |
-                git config --global user.name 'Actions: Generate MKDocs Website'
-                git config --global user.email 'actions-generate-mkdocs-website@users.noreply.github.com'
+                git config --global user.name 'Actions: Update Staging Branch'
+                git config --global user.email 'actions-update-staging-branch@users.noreply.github.com'
                 git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
             
               # Check for an origin/dev and origin/main.
