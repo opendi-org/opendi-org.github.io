@@ -16,6 +16,11 @@ const sidebars = {
     },
     {
       type: 'doc',
+      label: 'About the Founders',
+      id: 'About the Founders'
+    },
+    {
+      type: 'doc',
       label: 'How to Contribute',
       id: 'How To Contribute'
     },
