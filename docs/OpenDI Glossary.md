@@ -76,10 +76,67 @@ Examples include:
 - Server space
 - Computation time
 
+## Concept Assembly
+The interactive process by which participants (human and/or machine) establish shared meaning for a decision-related task by proposing, testing, and refining interpretations until they reach [Decidability](#decidability).
+
+Note:  
+Concept Assembly is bidirectional: the system may surface ambiguities the user did not anticipate, and the user may provide context the system cannot infer probabilistically or deterministically. The sequence of clarification steps is part of what constitutes the shared meaning needed to proceed.
+
+See also: [Context Trace](#context-trace), [Decidability](#decidability), [Decision Frame](#decision-frame).
+
+## Context Graph
+A reusable representation that aggregates multiple [Context Trace](#context-trace)s across interactions, forming an organizational record of how terms and assumptions are commonly resolved in practice.
+
+A Context Graph can be treated as a [Decision Asset](#decision-asset) that informs future Context Traces, supports auditability, and improves consistency across teams.
+
+Example:  
+A Context Graph might capture that “revenue” in finance, in a specific process, from a specific user's role, in a specific task, refers to recognized revenue (per the organization’s accounting policy), while “revenue” in other sales processes, or from other sales sources of record refers to booked ARR, and use this information to guide future clarifications.
+
+See also: [Context Trace](#context-trace), [Decision Asset](#decision-asset), [Decision Document](#decision-document).
+
+
 ## Convergent Thinking
 Synonymous with Analytical thinking, and somewhat like [Kahneman's System 2](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems), it means thinking carefully through some reasoning process.
 
 Compare to [Divergent Thinking](#divergent-thinking).
+
+## Context Trace
+A structured record of the clarifications, bindings, and assumptions used to make key terms in a decision sufficiently specific for action.
+
+Context Traces make visible information that is often implicit in human conversation or silently assumed by an AI system. A Context Trace may include:
+- What was ambiguous or underspecified
+- What interpretations were considered
+- What questions were asked and answered
+- What assumptions were adopted
+- What uncertainty remained when action was taken
+
+Note:  
+A Context Trace captures the information needed to reproduce and audit how meaning was established for decision use.
+
+See also: [Assumption](#assumption), [Decision Element](#decision-element), [Decision Frame](#decision-frame), [Decidability](#decidability).
+
+## Decidability
+The point at which a decision-related task has been specified with sufficient shared understanding to proceed with action.
+
+Decidability is the stopping condition for a [Context Trace](#context-trace). It is reached when uncertainty and underspecification have been reduced to the minimum viable level required to act responsibly, given applicable constraints and policies.
+
+Decidability is evaluated against the current state of the [Intent Map](#intent-map), not against the original query alone.
+
+Decidability does not require resolving every possible ambiguity or gathering all available information. Instead, it answers the practical question: *Do we have enough shared understanding to proceed?*
+
+Decidability states may include:
+- **Rejection**: Execution blocked due to unresolved ambiguity, missing required information, or policy violation
+- **Warning**: Ambiguity identified; clarification required before proceeding
+- **Actionable**: Sufficient specification established to proceed with execution
+
+Example:  
+A query about “yesterday’s sales” may enter **Warning** if timezone is unspecified, and reach **Actionable** once timezone, revenue definition (e.g., gross vs. net), and currency handling are mutually established in the Intent Map.
+
+Note:  
+Without an explicit stopping condition, systems may either collapse uncertainty silently (leading to untraceable assumptions) or continue requesting clarification indefinitely. Decidability provides a principled mechanism for determining when meaning is sufficient for action.
+
+See also: [Intent Map](#intent-map), [Context Trace](#context-trace), [Decision Making](#decision-making), [Decision Assessment](#decision-assessment).
+
 
 ## Decision
 In the context of DI, a decision is about [Actions](#action) leading to [Outcomes](#outcome).
@@ -279,6 +336,19 @@ An upstream [Causal Chain](#causal-chain) from an [Outcome](#outcome), [Intermed
  For example, a team might suggest that to "lower the cost of parts" they should "improve relationships with our vendors." "Improve relationships with our vendors" is not a Lever; it is not an action the Team or Decision Customer can take. If you ask, "how can we improve relationships with our vendors?" someone might suggest "talk with them" and if you ask "how?" again you might eventually arrive at "schedule the VP of Production to meet every month with an executive from each of our key vendors." 
 
 See also: ["Why" Chain](#why-chain)
+
+## Intent Map
+A structured representation of a participant’s intended meaning for a decision-related task, including the system’s current understanding of that intent and any unresolved ambiguities.
+
+An Intent Map provides the structure within which [Context Trace](#context-trace)s are recorded and evaluated. It makes explicit what the user intends, what the system understands, and where clarification is still required.
+
+Note:  
+Intent Maps may be implemented in different ways depending on the application. Regardless of implementation, their purpose is to provide a shared, inspectable structure for aligning understanding between participants.
+
+Decidability is evaluated against the current state of the Intent Map.
+
+See also: [Context Trace](#context-trace), [Concept Assembly](#concept-assembly), [Decidability](#decidability), [Decision Frame](#decision-frame).
+
 
 ## Intermediate
  A [Decision Element](#decision-element) that forms the links in [Causal Chains](#causal-chain) that connect [Levers](#lever) to [Outcomes](#outcome).
