@@ -10,19 +10,19 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'OpenDI',
   tagline: 'Home page for OpenDI. View the draft materials for our upcoming standards. Get involved!',
-  favicon: 'img/opendi-icon-small.png',
+  favicon: 'img/opendi-favicon.ico',
 
   // Set the production url of your site here
   url: 'https://opendi.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // This will be our homepage, so it will go at the base path '/'
-  baseUrl: '/',
+  baseUrl: '/glossary/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'opendi-org', // Usually your GitHub org/user name.
-  projectName: 'landing-site',    // Leaving this as landing-site for now. I think this is more descriptive than opendi-org.github.io. From testing, this shouldn't impact deployment.
+  organizationName: 'opendi-org', // GitHub org name
+  projectName: 'glossary',    // Repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -73,7 +73,7 @@ const config = {
             {
               return undefined;
             }
-            return "https://github.com/opendi-org/opendi-org.github.io/tree/dev/" + versionDocsDirPath + "/" + docPath;
+            return "https://github.com/opendi-org/glossary/tree/dev/" + versionDocsDirPath + "/" + docPath;
           },
 
           routeBasePath: '/'
@@ -91,17 +91,18 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'OpenDI',
         logo: {
           alt: 'OpenDI Logo',
-          src: 'img/opendi-icon.png',
+          src: 'img/opendi-logo.png',
+          srcDark: 'img/opendi-logo-dark.png',
+          href: 'https://opendi.org'
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'landingSidebar',
             position: 'left',
-            label: 'Home',
+            label: 'OpenDI Glossary',
           },
           {
             type: 'docsVersionDropdown',
@@ -110,7 +111,7 @@ const config = {
           {
             'aria-label': 'GitHub Repo',
             className: 'navbar--github-link',
-            href: 'https://github.com/opendi-org/opendi-org.github.io',
+            href: 'https://github.com/opendi-org/glossary',
             position: 'right',
           },
           {
@@ -125,37 +126,99 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Community',
             items: [
               {
-                label: 'Home',
-                to: 'http://opendi.org',
-              },
-              {
-                label: 'Roles and User Stories',
-                href: 'http://opendi.org/roles-user-stories'
-              },
-              {
-                label: 'API Specification',
-                href: 'http://opendi.org/api-specification'
-              },
-            ],
-          },
-          {
-            title: 'Get Involved',
-            items: [
-              {
-                label: 'OpenDI Discord',
+                label: 'Discord',
                 href: 'https://discord.gg/FtAX3JStJz',
               },
               {
                 label: 'GitHub',
                 href: 'https://github.com/opendi-org',
               },
+              {
+                label: 'Quantellia',
+                href: 'https://quantellia.com/',
+              },
+              {
+                label: 'CModel Data, Inc',
+                href: 'https://www.cmodel.io/',
+              },
+              {
+                label: 'NC State University',
+                href: 'https://www.ncsu.edu/',
+              }
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'Blog',
+                href: 'http://opendi.org/blog',
+              },
+              {
+                label: 'Decision Intelligence News',
+                href: 'https://www.scoop.it/topic/decision-intelligence/',
+              },
+              {
+                label: 'OpenDI Glossary',
+                href: 'http://opendi.org/glossary',
+              },
+              {
+                label: 'Decision Intelligence Webinars',
+                href: 'https://quantellia.com/ai-and-di-workshops/'
+              }
+            ],
+          },
+          {
+            title: 'Follow Us',
+            items: [
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/opendi-org/',
+              },
+              {
+                label: 'Facebook',
+                href: 'https://www.facebook.com/people/OpenDi/100095177432725/'
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/channel/UC4Thj0JegsJ3csqb-iEPI5A'
+              },
+              {
+                label: 'BlueSky',
+                href: 'https://bsky.app/profile/opendi.bsky.social'
+              }
+            ],
+          },
+          {
+            title: 'OpenDI',
+            items: [
+              {
+                label: 'Main Site',
+                href: 'http://opendi.org',
+              },
+              {
+                label: 'Roles and User Stories',
+                href: 'https://opendi-org.github.io/roles-user-stories/'
+              },
+              {
+                label: 'API Specification',
+                href: 'https://opendi-org.github.io/api-specification/'
+              },
+              {
+                label: 'CDM Authoring Tool',
+                href: 'https://opendi-org.github.io/cdd-authoring-tool/'
+              },
+              {
+                label: 'Glossary',
+                href: 'https://opendi-org.github.io/glossary/'
+              }
             ],
           },
         ],
-        copyright: `Built with Docusaurus.`,
+        copyright: `© 2025-26 OpenDI. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,

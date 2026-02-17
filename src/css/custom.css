@@ -1,32 +1,91 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* You can override the default Infima variables here. */
+/* LIGHT MODE COLORS */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #2469b6;
+  --ifm-color-primary-dark: #205fa4;
+  --ifm-color-primary-darker: #1f599b;
+  --ifm-color-primary-darkest: #194a7f;
+  --ifm-color-primary-light: #2874c8;
+  --ifm-color-primary-lighter: #2979d1;
+  --ifm-color-primary-lightest: #428ada;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-background-color: #fbfdff;
+  --ifm-heading-color: var(--ifm-color-primary-darkest);
+
+  /* (applies in both light and dark mode) */
+  --ifm-footer-link-hover-color: #a0cdff; /* --ifm-color-primary-lightest from dark mode settings */
+
+  /* FONT FAMILIES */
+  --ifm-headings-font-family: 'Arimo', 'Montserrat', 'Open Sans', sans-serif;
+  --ifm-font-family-base: 'Arimo', 'Montserrat', 'Open Sans', sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+.navbar, .navbar-sidebar__brand {
+  background-color: #eef6ff;
+}
+
+.footer {
+  background-color: #063e5f;
+}
+
+/* END LIGHT MODE COLORS */
+
+/* DARK MODE COLORS */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #409bff;
+  --ifm-color-primary-dark: #208aff;
+  --ifm-color-primary-darker: #1082ff;
+  --ifm-color-primary-darkest: #006adf;
+  --ifm-color-primary-light: #60acff;
+  --ifm-color-primary-lighter: #70b4ff;
+  --ifm-color-primary-lightest: #a0cdff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-heading-color: var(--ifm-color-primary-lightest);
+
+  /* FONT FAMILIES */
+  --ifm-headings-font-family: 'Arimo', 'Montserrat', 'Open Sans', sans-serif;
+  --ifm-font-family-base: 'Arimo', 'Montserrat', 'Open Sans', sans-serif;
+}
+
+/* Dark mode background color */
+/* (This must be set in a different manner from the light mode background color) */
+[data-theme='dark'] body,
+[data-theme='dark'] .main-wrapper,
+[data-theme='dark'] .theme-doc-markdown,
+[data-theme='dark'] .theme-doc-markdown--centered {
+  background-color: #181a1c;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #1b222b;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #063e5f;
+}
+
+/* END DARK MODE COLORS */
+
+
+/* MAKE NAVBAR LOGO BIGGER */
+.navbar__brand,
+.navbar__logo {
+  /* Ensure logo stays centered vertically */
+  display: flex;
+  align-items: center;
+}
+
+.navbar__brand img,
+.navbar__logo img {
+  /* Adjust height to 90% of navbar height */
+  width: auto;
+  height: calc(var(--ifm-navbar-height, 4em) * 0.9);
+  max-height: var(--ifm-navbar-height);
 }
 
 /* 

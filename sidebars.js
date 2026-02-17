@@ -6,65 +6,39 @@ const sidebars = {
   landingSidebar: [
     {
       type: 'doc',
-      label: 'Home',
+      label: 'Glossary',
       id: 'index'
     },
     {
-      type: 'doc',
-      label: 'Introduction to OpenDI',
-      id: 'OpenDI Intro Material'
-    },
-    {
-      type: 'doc',
-      label: 'About the Founders',
-      id: 'About the Founders'
-    },
-    {
-      type: 'doc',
-      label: 'How to Contribute',
-      id: 'How To Contribute'
-    },
-    {
       type: 'category',
-      label: 'OpenDI Standards',
+      label: 'OpenDI',
       items: [
+        {
+          type: 'link',
+          label: 'Main Site',
+          href: 'https://opendi.org'
+        },
         {
           type: 'link',
           label: 'Roles and User Stories',
-          href: 'http://opendi.org/roles-user-stories'
+          href: 'https://opendi-org.github.io/roles-user-stories/'
         },
         {
           type: 'link',
-          label: '(Working Draft) API Specification',
-          href: 'http://opendi.org/api-specification'
+          label: 'API Specification',
+          href: 'https://opendi-org.github.io/api-specification/'
         },
+        {
+            type: 'link',
+            label: 'CDM Authoring Tool',
+            href: 'https://opendi-org.github.io/cdd-authoring-tool/'
+        },
+        {
+            type: 'link',
+            label: 'Glossary',
+            href: 'https://opendi-org.github.io/glossary/'
+        }
       ]
-    },
-    {
-      type: 'category',
-      label: 'How to Use OpenDI',
-      items: [
-        {
-          type: 'doc',
-          label: 'Resource Guide',
-          id: 'How-to-use-OpenDI/Resource Guide'
-        },
-        {
-          type: 'doc',
-          label: 'Reference Implementations',
-          id: 'How-to-use-OpenDI/Reference Implementations'
-        },
-        {
-          type: 'doc',
-          label: 'Gallery',
-          id: 'How-to-use-OpenDI/Gallery'
-        },
-      ]
-    },
-    {
-      type: 'doc',
-      label: 'OpenDI Glossary',
-      id: 'OpenDI Glossary'
     }
   ],
 
